@@ -8,6 +8,8 @@
   /* Brand colors */
   --color-primary: #0070f3;
   --color-primary-hover: #005bcc;
+  --color-secondary: #c9a96e;
+  --color-tertiary: #b96700;
 
   /* Neutral palette */
   --color-background: var(--bg);

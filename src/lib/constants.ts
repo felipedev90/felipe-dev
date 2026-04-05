@@ -1,7 +1,7 @@
 export const CONTACT = {
   name: "Felipe Augusto",
   email: "augusto.felipedev@gmail.com",
-  whatsapp: "+55 11 97505-9454",
+  whatsapp: "+5511975059454",
   linkedin: "https://linkedin.com/in/felipesilva90",
   github: "https://github.com/felipedev90",
   portfolio: "https://felipe-silva90-portfolio.vercel.app/",
@@ -10,18 +10,18 @@ export const CONTACT = {
 export const NAV_LINKS = [
   {
     label: "Serviços",
-    href: "/#services",
+    href: "/#servicos",
   },
   {
     label: "Projetos",
-    href: "/#projects",
+    href: "/#projetos",
   },
   {
     label: "Sobre",
-    href: "/#about",
+    href: "/#sobre",
   },
   {
     label: "FAQ",
     href: "/#faq",
   },
-];
+] as const;

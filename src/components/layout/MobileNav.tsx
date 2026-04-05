@@ -15,10 +15,12 @@ export default function MobileNav() {
 
       {isOpen && (
         <div
+          data-testid="mobile-overlay"
           className="fixed inset-0 bg-background/10 backdrop-blur-md z-50 flex flex-col items-center justify-center"
           onClick={() => setIsOpen(false)}
         >
           <nav
+            aria-label="Menu mobile"
             className="flex flex-col items-center space-y-8"
             onClick={(e) => e.stopPropagation()}
           >

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Barlow_Condensed } from "next/font/google";
 import "../app/styles/globals.css";
+import Header from "@/components/layout/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +14,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const barlowCondensed = Barlow_Condensed({
+  weight: "800",
+  variable: "--font-barlow",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Felipe Augusto | Desenvolvedor Web",
   description:
@@ -20,15 +28,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-fg">{children}</body>
+      <body>
+        <Header />
+        <main className="pt-16">{children}</main>
+      </body>
     </html>
   );
 }

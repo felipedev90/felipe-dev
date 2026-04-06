@@ -4,6 +4,7 @@
   /* Typography */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-barlow);
 
   /* Brand colors */
   --color-primary: #0070f3;

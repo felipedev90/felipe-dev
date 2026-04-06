@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full z-50 flex justify-between">
+    <header className="fixed top-0 w-full z-50 flex justify-between bg-white ">
       <Container>
         <div className="flex justify-between items-center py-4">
           {/* Título do Header */}

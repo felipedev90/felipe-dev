@@ -7,13 +7,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[calc(100dvh-64px)] py-12 lg:py-24 overflow-hidden"
+      className="relative min-h-[50dvh] py-12 lg:py-24 overflow-hidden"
     >
       <Container>
         <div className="h-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           {/* LADO ESQUERDO: Texto (Ocupa 7 colunas no desktop) */}
           <div className="md:col-span-7 lg:col-span-6 flex flex-col justify-center">
-            <span className="text-secondary text-center md:text-start font-mono uppercase font-medium mb-4 block">
+            <span className="text-secondary text-center md:text-start font-mono uppercase font-medium mb-4 block animate-pulse">
               {HERO_CONTENT.availability}
             </span>
             <h1 className="font-heading text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[1.05] text-on-surface mb-6">
@@ -28,13 +28,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href={`https://wa.me/${CONTACT.whatsapp}`}
-                className="inline-flex font-mono uppercase items-center bg-secondary text-black font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-amber-400/60 transition-all hover:scale-105"
+                className=" font-mono uppercase text-center md:text-start bg-secondary text-black font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-amber-400/60 transition-all hover:scale-105 "
               >
                 Solicitar Orçamento
               </Link>
               <Link
                 href={`https://wa.me/${CONTACT.whatsapp}`}
-                className="inline-flex font-mono uppercase items-center text-black font-semibold py-4 px-8 border border-secondary rounded-lg shadow-lg hover:bg-amber-400/60 transition-all hover:scale-105"
+                className=" font-mono uppercase text-center md:text-start text-black font-semibold py-4 px-8 border border-secondary rounded-lg shadow-lg hover:bg-amber-400/60 transition-all hover:scale-105"
               >
                 Ver Planos
               </Link>

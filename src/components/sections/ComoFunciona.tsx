@@ -5,11 +5,11 @@ export default function ComoFunciona() {
   return (
     <section id="como-funciona" className="py-16 lg:py-24">
       <Container>
-        <div className="flex flex-col text-left mb-12">
-          <h2 className="font-heading text-2xl font-bold lg:text-4xl">
+        <div className="flex flex-col items-center mb-12">
+          <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">
             {HOW_IT_WORKS_CONTENT.title}
           </h2>
-          <p className="text-muted mt-2 max-w-2xl text-sm lg:text-base">
+          <p className="text-muted  mt-2 max-w-2xl text-sm lg:text-base">
             {HOW_IT_WORKS_CONTENT.subtitle}
           </p>
         </div>

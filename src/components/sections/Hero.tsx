@@ -13,8 +13,9 @@ export default function Hero() {
         <div className="h-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           {/* LADO ESQUERDO: Texto (Ocupa 7 colunas no desktop) */}
           <div className="md:col-span-7 lg:col-span-6 flex flex-col justify-center">
+            {/*
             <div className="flex items-center gap-3 mb-4 justify-start">
-              {/* Container da bolinha */}
+              {/* Container da bolinha 
               <span className="relative flex h-3 w-3 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
@@ -23,6 +24,7 @@ export default function Hero() {
                 {HERO_CONTENT.availability}
               </span>
             </div>
+            */}
             <h1 className="font-heading text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[1.05] text-on-surface mb-6">
               {HERO_CONTENT.title} <br />
               <span className="font-heading text-transparent bg-clip-text bg-linear-to-r from-secondary via-tertiary to-secondary animate-gradient-x">

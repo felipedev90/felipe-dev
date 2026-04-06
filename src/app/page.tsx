@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Especialidades from "@/components/sections/Especialidades";
 import ComoFunciona from "@/components/sections/ComoFunciona";
+import Servicos from "@/components/sections/Servicos";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Especialidades />
         <ComoFunciona />
+        <Servicos />
       </main>
     </>
   );

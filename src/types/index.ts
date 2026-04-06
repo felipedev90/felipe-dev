@@ -9,17 +9,19 @@ export interface Project {
 }
 
 export interface ServiceFeature {
-  label: string;
+  text: string;
   included: boolean;
 }
 
 export interface Service {
-  id: string;
   name: string;
+  slug: string;
   description: string;
+  oldPrice?: string;
   price: string;
+  duration: string;
+  highlight: boolean;
   features: ServiceFeature[];
-  highlighted?: boolean;
 }
 
 export interface FaqItem {

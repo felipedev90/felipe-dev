@@ -26,8 +26,8 @@ export default function Especialidades() {
         />
       </div>
       <Container className="relative z-10">
-        <div className="border opacity-5 mb-6" />
-        <div className="flex flex-col items-start text-left">
+        <div className="border opacity-5 mb-12" />
+        <div className="flex flex-col items-start text-left  lg:mb-12">
           <h2 className="font-heading text-2xl font-bold lg:text-4xl">
             {SPECIALTIES_CONTENT.title}
           </h2>

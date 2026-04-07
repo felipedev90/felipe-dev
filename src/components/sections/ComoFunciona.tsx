@@ -1,5 +1,5 @@
 import Container from "../ui/Container";
-import { HOW_IT_WORKS_CONTENT } from "@/lib/constants";
+import { how_it_works_content } from "@/data/howItWorks";
 
 export default function ComoFunciona() {
   return (
@@ -7,16 +7,16 @@ export default function ComoFunciona() {
       <Container>
         <div className="flex flex-col items-center mb-12">
           <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">
-            {HOW_IT_WORKS_CONTENT.title}
+            {how_it_works_content.title}
           </h2>
           <p className="text-muted  mt-2 max-w-2xl text-sm lg:text-base">
-            {HOW_IT_WORKS_CONTENT.subtitle}
+            {how_it_works_content.subtitle}
           </p>
         </div>
 
         {/* Grid cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-8">
-          {HOW_IT_WORKS_CONTENT.steps.map((step, index) => (
+          {how_it_works_content.steps.map((step, index) => (
             <div
               key={step.title}
               className="flex flex-col group items-center lg:border-r last:border-r-0 border-muted pr-8 lg:pr-12 transition-transform hover:-translate-y-2"

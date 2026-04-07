@@ -48,4 +48,8 @@ export interface FaqItem {
   id: string;
   question: string;
   answer: string;
+  cta?: {
+    label: string;
+    href: string;
+  };
 }

@@ -14,6 +14,19 @@ export interface ServiceFeature {
 }
 
 export interface Service {
+  title: string;
+  subtitle: string;
+  plans: ServicePlan[];
+  slug: string;
+  description: string;
+  oldPrice?: string;
+  price: string;
+  duration: string;
+  highlight: boolean;
+  features: ServiceFeature[];
+}
+
+export interface ServicePlan {
   name: string;
   slug: string;
   description: string;
@@ -22,6 +35,13 @@ export interface Service {
   duration: string;
   highlight: boolean;
   features: ServiceFeature[];
+}
+
+export interface AboutContent {
+  image: string;
+  title: string;
+  subtitle: string;
+  content: string;
 }
 
 export interface FaqItem {

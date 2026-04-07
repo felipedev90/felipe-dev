@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { HERO_CONTENT, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
+import { hero_content } from "@/data/hero";
 import Link from "next/link";
 import Container from "../ui/Container";
 
@@ -21,18 +22,19 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
               <span className="text-secondary font-mono uppercase font-medium text-sm sm:text-base tracking-wider ">
-                {HERO_CONTENT.availability}
+                {hero_content.availability}
               </span>
             </div>
             */}
+
             <h1 className="font-heading text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[1.05] text-on-surface mb-6">
-              {HERO_CONTENT.title} <br />
+              {hero_content.title} <br />
               <span className="font-heading text-transparent bg-clip-text bg-linear-to-r from-secondary via-tertiary to-secondary animate-gradient-x">
-                {HERO_CONTENT.highlight}
+                {hero_content.highlight}
               </span>
             </h1>
             <p className="font-sans text-lg text-muted md:text-xl text-on-surface-variant max-w-xl mb-8 leading-relaxed">
-              {HERO_CONTENT.subtitle}
+              {hero_content.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -58,8 +60,8 @@ export default function Hero() {
           {/* LADO DIREITO: Imagem (Ocupa 5 colunas no desktop) */}
           <div className="block md:col-span-5 lg:col-span-6 relative h-75 md:h-125 lg:h-150">
             <Image
-              src={HERO_CONTENT.image}
-              alt={HERO_CONTENT.title}
+              src={hero_content.image}
+              alt={hero_content.title}
               fill
               priority
               className="object-contain object-right"

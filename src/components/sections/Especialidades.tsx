@@ -1,5 +1,5 @@
 import Container from "../ui/Container";
-import { SPECIALTIES_CONTENT } from "@/lib/constants";
+import { specialties_content } from "@/data/specialties";
 import Image from "next/image";
 import { Gauge, Smartphone, Search } from "lucide-react";
 
@@ -17,7 +17,7 @@ export default function Especialidades() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src={SPECIALTIES_CONTENT.image}
+          src={specialties_content.image}
           alt="Background descritivo"
           fill
           priority
@@ -29,14 +29,14 @@ export default function Especialidades() {
         <div className="max-w-2xl m-auto border opacity-5 mb-12" />
         <div className="flex flex-col items-center text-left  lg:mb-12">
           <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">
-            {SPECIALTIES_CONTENT.title}
+            {specialties_content.title}
           </h2>
           <p className="text-muted mt-2 max-w-2xl text-sm lg:text-base">
-            {SPECIALTIES_CONTENT.subtitle}
+            {specialties_content.subtitle}
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3 mt-2 md:mt-8">
-          {SPECIALTIES_CONTENT.specialties.map((speciality) => {
+          {specialties_content.specialties.map((speciality) => {
             const Icon = ICONS[speciality.id];
 
             return (

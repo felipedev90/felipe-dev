@@ -1,7 +1,8 @@
 import { Check, X, MoveRight } from "lucide-react";
-import { PRICING_CONTENT, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import Container from "../ui/Container";
 import Link from "next/link";
+import { services } from "@/data/services";
 
 export default function Servicos() {
   return (
@@ -14,20 +15,20 @@ export default function Servicos() {
         <div className="text-center mb-16">
           <div className="max-w-2xl m-auto border opacity-5 mb-12" />
           <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">
-            {PRICING_CONTENT.title}
+            {services.title}
           </h2>
-          <p className="text-muted mt-4">{PRICING_CONTENT.subtitle}</p>
+          <p className="text-muted mt-4">{services.subtitle}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-          {PRICING_CONTENT.plans.map((plan) => {
+          {services.plans.map((plan) => {
             const whatsappMessage = `Olá Felipe, estou interessado no pacote ${plan.name}, podemos conversar?`;
             const whatsappLink = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`;
 
             return (
               <div
                 key={plan.name}
-                className={`relative flex flex-col p-2 md:p-4 lg:p-8 rounded-2xl border transition-all duration-300 ${
+                className={`relative flex flex-col p-4 md:p-6 lg:p-8 rounded-2xl border transition-all duration-300 ${
                   plan.highlight
                     ? "bg-white border-secondary shadow-2xl md:scale-105 z-10"
                     : "bg-white border-white/10 shadow-lg"
@@ -35,8 +36,8 @@ export default function Servicos() {
               >
                 {/* LABEL MAIS VENDIDO */}
                 {plan.highlight && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-                    <span className="bg-secondary text-black text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-20">
+                    <span className="bg-secondary text-black text-sm font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
                       Mais Vendido
                     </span>
                   </div>
@@ -115,7 +116,7 @@ export default function Servicos() {
 
                 {/* Rodapé e Botão */}
                 <div className="mt-auto pt-2 border-t border-white/5">
-                  <p className="text-[10px] text-muted text-center mb-4 font-heading  uppercase tracking-widest">
+                  <p className="text-sm text-muted text-center mb-4 font-heading  uppercase tracking-widest">
                     {plan.duration}
                   </p>
                   <Link

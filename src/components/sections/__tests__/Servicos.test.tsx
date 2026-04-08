@@ -1,7 +1,8 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import Servicos from "../Servicos";
-import { PRICING_CONTENT, CONTACT } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
+import { services as PRICING_CONTENT } from "@/data/services";
 
 vi.mock("next/link", () => ({
   default: ({
@@ -25,7 +26,7 @@ describe("Servicos", () => {
   it("renderiza o título da seção", () => {
     render(<Servicos />);
     expect(
-      screen.getByRole("heading", { name: PRICING_CONTENT.title })
+      screen.getByRole("heading", { name: PRICING_CONTENT.title }),
     ).toBeInTheDocument();
   });
 
@@ -38,7 +39,7 @@ describe("Servicos", () => {
     render(<Servicos />);
     for (const plan of PRICING_CONTENT.plans) {
       expect(
-        screen.getByRole("heading", { name: plan.name })
+        screen.getByRole("heading", { name: plan.name }),
       ).toBeInTheDocument();
     }
   });
@@ -69,7 +70,7 @@ describe("Servicos", () => {
   it("não exibe o label 'Mais Vendido' em planos sem destaque", () => {
     render(<Servicos />);
     const nonHighlightedPlans = PRICING_CONTENT.plans.filter(
-      (p) => !p.highlight
+      (p) => !p.highlight,
     );
     for (const plan of nonHighlightedPlans) {
       const heading = screen.getByRole("heading", { name: plan.name });
@@ -82,21 +83,17 @@ describe("Servicos", () => {
     render(<Servicos />);
     const plansWithOldPrice = PRICING_CONTENT.plans.filter((p) => p.oldPrice);
     for (const plan of plansWithOldPrice) {
-      expect(
-        screen.getByText(`De R$ ${plan.oldPrice}`)
-      ).toBeInTheDocument();
+      expect(screen.getByText(`De R$ ${plan.oldPrice}`)).toBeInTheDocument();
     }
   });
 
   it("não exibe preço antigo em planos sem desconto", () => {
     render(<Servicos />);
     const plansWithoutOldPrice = PRICING_CONTENT.plans.filter(
-      (p) => !p.oldPrice
+      (p) => !p.oldPrice,
     );
     for (const plan of plansWithoutOldPrice) {
-      expect(
-        screen.queryByText(`De R$ ${plan.price}`)
-      ).not.toBeInTheDocument();
+      expect(screen.queryByText(`De R$ ${plan.price}`)).not.toBeInTheDocument();
     }
   });
 

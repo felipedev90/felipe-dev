@@ -4,7 +4,7 @@ import { WhatsappIcon } from "../ui/WhatsAppIcon";
 
 export default function CTAFinal() {
   return (
-    <section className="bg-background text-foreground py-12 border-t-2 border-secondary">
+    <section className="bg-black text-foreground py-12 border-t-2 border-secondary">
       <div className="container flex flex-col items-center justify-center m-auto p-4 gap-10 lg:gap-12">
         <div>
           <h2 className="text-4xl text-center  md:text-6xl font-heading uppercase mb-6 ">

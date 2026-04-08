@@ -19,7 +19,7 @@ export default function ComoFunciona() {
           {how_it_works_content.steps.map((step, index) => (
             <div
               key={step.title}
-              className="flex flex-col group items-center lg:border-r last:border-r-0 border-muted pr-8 lg:pr-12 transition-transform hover:-translate-y-2"
+              className="flex flex-col group items-center lg:border-r last:border-r-0 border-muted md:pr-8 lg:pr-12 transition-transform hover:-translate-y-2"
             >
               <div className="w-10 h-10 rounded-full bg-secondary font-bold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 {index + 1}

@@ -5,6 +5,7 @@ export const CONTACT = {
   linkedin: "https://linkedin.com/in/felipesilva90",
   github: "https://github.com/felipedev90",
   portfolio: "https://felipe-silva90-portfolio.vercel.app/",
+  instagram: "https://instagram.com/felipe.augst",
 } as const;
 
 export const NAV_LINKS = [
@@ -25,8 +26,3 @@ export const NAV_LINKS = [
     href: "/#faq",
   },
 ] as const;
-
-
-
-
-

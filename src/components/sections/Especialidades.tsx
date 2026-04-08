@@ -12,7 +12,7 @@ const ICONS = {
 export default function Especialidades() {
   return (
     <section
-      id="servicos"
+      id="especialidades"
       className="relative w-full min-h-75 flex items-center overflow-hidden py-6 lg:py-12"
     >
       <div className="absolute inset-0 z-0">

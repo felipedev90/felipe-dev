@@ -3,7 +3,7 @@ import { WhatsappIcon } from "../ui/WhatsAppIcon";
 import { LinkedinIcon } from "../ui/LinkedinIcon";
 import { GithubIcon } from "../ui/GithubIcon";
 import Container from "../ui/Container";
-import { BookUser, MapPin, Mail } from "lucide-react"; // Importei MapPin e Mail
+import { BookUser, MapPin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,11 +12,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-12 items-center justify-center">
           {/* COLUNA 1: Bio */}
           <div className="md:col-span-3 flex flex-col justify-center items-center md:items-start text-center md:text-left gap-2">
-            <p className="font-bold font-mono">{`${new Date().getFullYear()} • ${CONTACT.name}`}</p>
+            <p className="font-bold text-black font-mono">{`${new Date().getFullYear()} • ${CONTACT.name}`}</p>
             <p className="font-mono text-muted text-md mb-4">
               Desenvolvedor Web
             </p>
-            <p className="font-mono text-sm opacity-70">
+            <p className="font-mono text-sm text-black opacity-70">
               Todos os direitos reservados.
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
           {/* COLUNA 2: Social/Links */}
           <div className="md:col-span-4 grid grid-cols-2 gap-6 w-full">
             <div className="flex flex-col items-center gap-4 py-2">
-              <WhatsappIcon className="w-5 h-5" />
+              <WhatsappIcon className="w-5 h-5 text-black" />
               <a
                 href={`https://wa.me/${CONTACT.whatsapp}`}
                 target="_blank"
@@ -40,7 +40,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex flex-col items-center gap-4 py-2">
-              <BookUser className="w-5 h-5" />
+              <BookUser className="w-5 h-5 text-black" />
               <a
                 href={CONTACT.portfolio}
                 target="_blank"
@@ -51,7 +51,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex flex-col items-center gap-4 py-2">
-              <LinkedinIcon className="w-5 h-5" />
+              <LinkedinIcon className="w-5 h-5 text-black" />
               <a
                 href={CONTACT.linkedin}
                 target="_blank"
@@ -62,7 +62,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex flex-col items-center gap-4 py-2">
-              <GithubIcon className="w-5 h-5" />
+              <GithubIcon className="w-5 h-5 text-black" />
               <a
                 href={CONTACT.github}
                 target="_blank"
@@ -110,7 +110,7 @@ export default function Footer() {
       </Container>
 
       {/* RODAPÉ INFERIOR */}
-      <div className="text-center pt-6 md:pt-5 lg:pt-8 px-10 md:p-2 border-t border-secondary text-[10px] tracking-[0.2em] text-on-surface/30 uppercase">
+      <div className="text-center text-black/60 pt-6 md:pt-5 lg:pt-8 px-10 md:p-2 border-t border-secondary text-[10px] tracking-[0.2em] text-on-surface/30 uppercase">
         © {new Date().getFullYear()} Criado e desenvolvido por{" "}
         <strong>
           <a

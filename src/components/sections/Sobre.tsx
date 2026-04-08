@@ -39,7 +39,7 @@ export default function Sobre() {
             </div>
           </div>
 
-          <div className="space-y-6 text-lg text-surface/80 font-mono leading-relaxed pt-4 md:pt-0">
+          <div className="space-y-6 text-lg text-black/60  font-mono leading-relaxed pt-4 md:pt-0">
             {about_content.content.split("\n").map((paragraph) => (
               <p key={paragraph.slice(0, 20)}>{paragraph}</p>
             ))}

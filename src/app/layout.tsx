@@ -24,6 +24,10 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL("https://felipeaugustodev.com.br"),
 
+  verification: {
+    google: "ImUpigYnIpm5uESLbUnzAEv8KONK9rllxtDht45dyHU",
+  },
+
   title: {
     default: "Desenvolvedor Web em Jundiaí | Criação de Sites Profissionais",
     template: "%s | Felipe Augusto",

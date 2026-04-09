@@ -7,10 +7,10 @@ export default function CTAFinal() {
     <section className="bg-black text-foreground py-12 border-t-2 border-secondary">
       <div className="container flex flex-col items-center justify-center m-auto p-4 gap-10 lg:gap-12">
         <div>
-          <h2 className="text-4xl text-center  md:text-6xl font-heading uppercase mb-6 ">
+          <h2 className="text-4xl text-center text-gray-200  md:text-6xl font-heading uppercase mb-6 ">
             Vamos trabalhar juntos?
           </h2>
-          <p className="md:text-lg text-center mb-6">
+          <p className="md:text-lg text-gray-200 text-center mb-6">
             Entre em contato comigo para discutir seu projeto e como posso
             ajudar a torná-lo realidade.
           </p>

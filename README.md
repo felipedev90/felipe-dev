@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Felipe Augusto - Site Pessoal Freelancer
 
-## Getting Started
+Site profissional de desenvolvedor web freelancer, construído com Next.js 15, TypeScript e Tailwind CSS. Focado em conversão de clientes para pequenos e médios negócios.
 
-First, run the development server:
+🌐 **[felipeaugustodev.com.br](https://felipeaugustodev.com.br)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Lighthouse
+
+| Performance | Accessibility | Best Practices | SEO |
+|:-----------:|:-------------:|:--------------:|:---:|
+| 94 | 91 | 100 | 100 |
+
+---
+
+## Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Linguagem:** TypeScript
+- **Estilização:** Tailwind CSS v4
+- **Animações:** Framer Motion
+- **Fontes:** Barlow Condensed + Geist (via `next/font/google`)
+- **Ícones:** Lucide React
+- **Testes:** Vitest + Testing Library
+- **CI/CD:** GitHub Actions + Husky
+- **Deploy:** Vercel
+
+---
+
+## Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Layout raiz — fontes, metadata, Header, Footer
+│   ├── page.tsx            # Home — composição das seções
+│   ├── projetos/
+│   │   └── page.tsx        # Galeria de projetos
+│   ├── contato/
+│   │   └── page.tsx        # Formulário + WhatsApp
+│   ├── sitemap.ts          # Sitemap dinâmico
+│   ├── robots.ts           # Regras para crawlers
+│   └── styles/
+│       └── globals.css     # Tokens de design (Tailwind v4 @theme)
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx      # Nav desktop — Server Component
+│   │   ├── MobileNav.tsx   # Menu mobile — Client Component
+│   │   └── Footer.tsx      # Footer com links sociais
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── Especialidades.tsx
+│   │   ├── ComoFunciona.tsx
+│   │   ├── Servicos.tsx
+│   │   ├── Sobre.tsx
+│   │   ├── FAQ.tsx
+│   │   └── CTAFinal.tsx
+│   └── ui/
+│       ├── Button.tsx
+│       ├── Container.tsx
+│       ├── FaqItem.tsx
+│       └── HeroAnimated.tsx
+├── data/
+│   ├── about.ts
+│   ├── faq.ts
+│   ├── projects.ts
+│   └── services.ts
+├── lib/
+│   └── constants.ts        # CONTACT, NAV_LINKS, HERO_CONTENT
+└── types/
+    └── index.ts            # Project, Service, FaqItem, AboutContent
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rodando Localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Instalar dependências
+npm install
 
-## Learn More
+# Desenvolvimento
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# Build de produção
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Testes
+npm run test
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Testes com UI
+npm run test:ui
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cobertura com Vitest + Testing Library nos componentes críticos:
+
+- `Header.tsx` — renderização, links de navegação, link de orçamento
+- `MobileNav.tsx` — abertura/fechamento do menu, overlay, links
+- `Servicos.tsx` — planos, features, links de WhatsApp por plano
+
+```bash
+npm run test
+```
+
+---
+
+## SEO
+
+- Metadata completo via Next.js `Metadata` API
+- Open Graph e Twitter Card configurados
+- `sitemap.xml` gerado dinamicamente
+- `robots.txt` via `robots.ts`
+- Schema.org via JSON-LD (em desenvolvimento)
+- Google Search Console verificado e sitemap enviado
+
+---
+
+## Deploy
+
+O deploy é feito automaticamente na Vercel a cada push na branch `main`.
+
+O pipeline de CI (GitHub Actions) executa lint e testes antes do merge. Commits são validados pelo Husky com mensagens no padrão Conventional Commits.
+
+---
+
+## Contato
+
+**Felipe Augusto da Silva**  
+📧 augusto.felipedev@gmail.com  
+💼 [linkedin.com/in/felipesilva90](https://linkedin.com/in/felipesilva90)  
+🐙 [github.com/felipedev90](https://github.com/felipedev90)

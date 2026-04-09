@@ -22,9 +22,66 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Felipe Augusto | Desenvolvedor Web",
+  metadataBase: new URL("https://felipeaugustodev.com.br"),
+
+  title: {
+    default: "Desenvolvedor Web em Jundiaí | Criação de Sites Profissionais",
+    template: "%s | Felipe Augusto",
+  },
+
   description:
-    "Desenvolvimento web profissional com Next.js, TypeScript e Tailwind CSS.",
+    "Criação de sites profissionais em Jundiaí, rápidos, responsivos e otimizados para Google. Aumente sua presença online e atraia mais clientes.",
+
+  keywords: [
+    "desenvolvedor web jundiaí",
+    "criação de sites jundiaí",
+    "sites profissionais",
+    "freelancer web",
+    "front-end",
+    "SEO local",
+  ],
+
+  authors: [{ name: "Felipe Augusto", url: "https://felipeaugustodev.com.br" }],
+  creator: "Felipe Augusto",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Criação de Sites em Jundiaí | Sites Profissionais e Rápidos",
+    description:
+      "Sites modernos, rápidos e otimizados para gerar clientes. Destaque sua empresa no Google.",
+    url: "https://felipeaugustodev.com.br",
+    siteName: "Felipe Augusto",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/images/SEO/criacao-sites-jundiai.webp",
+        width: 1200,
+        height: 630,
+        alt: "Criação de sites em Jundiaí",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Criação de Sites em Jundiaí",
+    description:
+      "Sites rápidos e otimizados para gerar clientes todos os dias.",
+    images: ["/images/SEO/criacao-sites-jundiai.webp"],
+  },
 };
 
 export default function RootLayout({

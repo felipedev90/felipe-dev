@@ -21,7 +21,7 @@ export default function Sobre() {
             <div className="relative z-10 w-full aspect-square border-1-8 border-secondary overflow-hidden">
               <Image
                 src={about_content.image}
-                alt="Foto de Felipe"
+                alt="Foto do desenvolvedor"
                 fill
                 quality={75}
                 className="object-cover lg:object-contain"

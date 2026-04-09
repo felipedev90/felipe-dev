@@ -15,7 +15,7 @@ export const NAV_LINKS = [
   },
   {
     label: "Projetos",
-    href: "/#projetos",
+    href: "https://www.github.com/felipedev90?tab=repositories",
   },
   {
     label: "Sobre",

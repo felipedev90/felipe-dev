@@ -12,7 +12,7 @@ export default function Servicos() {
     >
       <Container>
         {/* Título da Seção */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-18">
           <div className="max-w-2xl m-auto border opacity-5 mb-12" />
           <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">
             {services.title}

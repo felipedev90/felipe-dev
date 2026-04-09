@@ -3,7 +3,7 @@ import { how_it_works_content } from "@/data/howItWorks";
 
 export default function ComoFunciona() {
   return (
-    <section id="como-funciona" className="pt-16 lg:pt-24 lg:pb-12">
+    <section id="como-funciona" className="py-16 lg:pt-24 lg:pb-12">
       <Container>
         <div className="flex flex-col items-center mb-12">
           <h2 className="font-heading text-3xl md:text-5xl font-black uppercase tracking-tighter">

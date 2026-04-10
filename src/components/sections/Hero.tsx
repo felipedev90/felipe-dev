@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="md:col-span-7 lg:col-span-6 flex flex-col justify-center">
               <h1 className="font-heading text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[1.05] text-on-surface mb-6">
                 {hero_content.title} <br />
-                <span className="font-heading text-transparent bg-clip-text bg-linear-to-r from-secondary via-tertiary to-secondary animate-gradient-x">
+                <span className="font-heading text-transparent bg-clip-text bg-linear-to-r from-[#b9934a] via-tertiary to-[#b9934a] animate-gradient-x">
                   {hero_content.highlight}
                 </span>
               </h1>
@@ -39,7 +39,7 @@ export default function Hero() {
                   Ver Planos
                 </Link>
               </div>
-              <div className="flex flex-wrap justify-start gap-4 mt-6 text-sm text-muted">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6 text-sm text-muted">
                 <p>✓ Resposta rápida</p> <p className="hidden sm:block">·</p>{" "}
                 <p>✓ Orçamento personalizado</p>
               </div>

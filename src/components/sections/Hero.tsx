@@ -33,14 +33,13 @@ export default function Hero() {
                   Solicitar Orçamento
                 </Link>
                 <Link
-                  href={`https://wa.me/${CONTACT.whatsapp}`}
+                  href="/planos"
                   className=" font-mono uppercase text-center md:text-start text-black font-semibold py-4 px-8 border border-secondary rounded-lg shadow-lg hover:bg-amber-400/60 transition-all hover:scale-105"
                 >
                   Ver Planos
                 </Link>
               </div>
-              <div className="flex flex-wrap justify-center sm:justify-start gap-4 mt-6 text-sm text-muted">
-                <p>✓ Sem compromisso</p> <p className="hidden sm:block">·</p>{" "}
+              <div className="flex flex-wrap justify-start gap-4 mt-6 text-sm text-muted">
                 <p>✓ Resposta rápida</p> <p className="hidden sm:block">·</p>{" "}
                 <p>✓ Orçamento personalizado</p>
               </div>

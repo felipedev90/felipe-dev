@@ -8,7 +8,7 @@ export const specialties_content = {
       id: "performance",
       title: "Sites de Alta Performance",
       description:
-        "Lighthouse 90+ em todos os critérios. Seu site carrega rápido, aparece no Google e passa confiança para o cliente.",
+        "Lighthouse 90+ em todos os critérios. Seu site carrega rápido, aparece no Google e transmite confiança para o cliente.",
     },
     {
       id: "responsive",

@@ -11,7 +11,7 @@ export const CONTACT = {
 export const NAV_LINKS = [
   {
     label: "Serviços",
-    href: "/#servicos",
+    href: "/planos",
   },
   {
     label: "Projetos",

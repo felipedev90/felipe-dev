@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
 
           {/* COLUNA 3 */}
-          <div className="md:col-span-2 flex flex-col items-center md:items-start gap-8 w-full">
+          <div className="md:col-span-3 flex flex-col items-center md:items-start gap-8 w-full">
             <div className="flex flex-col items-center md:items-start gap-3">
               <div className="flex items-center gap-2 text-secondary">
                 <MapPin className="w-5 h-5" />
